@@ -1,0 +1,20 @@
+<item>
+    <title>Version 1.0 Pre-alpha</title>
+    <sparkle:releaseNotesLink>
+        https://example.com/release_notes/app_2.0.html
+    </sparkle:releaseNotesLink>
+    <pubDate>Sun, 19 Jun 2016 10:00:11 +0800</pubDate>
+    <enclosure url="https://example.com/downloads/app.zip.or.dmg.or.tar.etc"
+               sparkle:version="1.0"
+               sparkle:dsaSignature="MC0CFBfeCa1JyW30nbkBwainOzrN6EQuAh="
+               length="1623481"
+               type="application/octet-stream" />
+    <description><![CDATA[
+        <h2>New Features</h2>
+        <li>A new and better confirm dialog</li>
+        <li>Easy drag onto the system status icon</li>
+        <li>Fix the bug of showing blank while the second time adding an image</li>
+        <li>Some other fixes</li>
+    ]]>
+    </description>
+</item>
