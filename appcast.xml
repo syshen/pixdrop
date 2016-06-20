@@ -10,22 +10,14 @@
     <item>
         <title>Version 1.0 Pre-alpha1</title>
         <sparkle:releaseNotesLink>
-          https://syshen.github.io/pixdrop/release-1.0.52.html
+          https://syshen.github.io/pixdrop/release-1.0.54.html
         </sparkle:releaseNotesLink>
         <pubDate>Sun, 19 Jun 2016 10:00:11 +0800</pubDate>
-        <enclosure url="https://syshen.github.io/pixdrop/downloads/Pixdrop-1.0.52.dmg"
-                   sparkle:version="52"
+        <enclosure url="https://syshen.github.io/pixdrop/downloads/Pixdrop-1.0.54.dmg"
+                   sparkle:version="54"
                    sparkle:shortVersionString="1.0"                   
                    length="8253183"
                    type="application/octet-stream" />
-        <description><![CDATA[
-            <h2>New Features</h2>
-            <li>A new and better confirm dialog</li>
-            <li>Easy drag onto the system status icon</li>
-            <li>Fix the bug of showing blank while the second time adding an image</li>
-            <li>Some other fixes</li>
-        ]]>
-        </description>
     </item>
   </channel>
 </rss>
