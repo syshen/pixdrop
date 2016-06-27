@@ -1226,6 +1226,9 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   margin: -2px 12px 0 0;
 }
 @media (max-width: 767px) {
+  .content-2 {
+    padding:24px;
+  }
   .content-2 .btns {
     margin-top: 35px;
   }
@@ -1291,12 +1294,16 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   color: #7f8c8d;
   margin-top: 40px;
 }
+/*
 @media (min-width: 767px) {
   .content-9 h3 {
     padding-top: 90px;
   }
-}
+}*/
 @media (max-width: 767px) {
+  .content-9 {
+    padding:24px;
+  }
   .content-9 .info {
     margin-top: 20px;
   }
