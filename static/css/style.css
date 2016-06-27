@@ -935,6 +935,17 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 @media (max-width: 480px) {
+  .header-4 {
+    padding-top: 290px;
+    padding-bottom: 110px;
+  }
+  .header-4 .background {
+    background-image: url("../../startup/common-files/img/header-m.jpg");
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+  }
   .header-4 .btns .btn {
     display: block;
   }
