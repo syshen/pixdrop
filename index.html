@@ -242,7 +242,7 @@
             <script type="text/javascript">
             function showMailingPopUp() {
               document.cookie = "MCEvilPopupClosed=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-              $.removeCookie('MCEvilPopupClosed', { path: '/' });
+              // $.removeCookie('MCEvilPopupClosed', { path: '/' });
               require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us7.list-manage.com","uuid":"80b1f06cb0f4e0ed10b1cdf14","lid":"b3a473e5b6"}) })
             };
             document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
