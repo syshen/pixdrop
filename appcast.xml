@@ -3,17 +3,17 @@
   <channel>
     <title>Pixdrop Releases Changelog</title>
     <link>
-      http://pixdrop.cc/appcast.xml
+      https://pixdrop.cc/appcast.xml
     </link>
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
         <title>Version 1.0 Pre-alpha1</title>
         <sparkle:releaseNotesLink>
-          http://pixdrop.cc/release-1.0.58.html
+          https://pixdrop.cc/release-1.0.58.html
         </sparkle:releaseNotesLink>
         <pubDate>Wed, 29 Jun 2016 16:22:11 +0800</pubDate>
-        <enclosure url="http://pixdrop.cc/downloads/Pixdrop-1.0.58.dmg"
+        <enclosure url="https://pixdrop.cc/downloads/Pixdrop-1.0.58.dmg"
                    sparkle:version="58"
                    sparkle:shortVersionString="1.0"
                    length="8338414"
