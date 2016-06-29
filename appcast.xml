@@ -10,13 +10,13 @@
     <item>
         <title>Version 1.0 Pre-alpha1</title>
         <sparkle:releaseNotesLink>
-          https://syshen.github.io/pixdrop/release-1.0.57.html
+          https://syshen.github.io/pixdrop/release-1.0.58.html
         </sparkle:releaseNotesLink>
-        <pubDate>Sun, 19 Jun 2016 10:00:11 +0800</pubDate>
-        <enclosure url="https://syshen.github.io/pixdrop/downloads/Pixdrop-1.0.57.dmg"
-                   sparkle:version="57"
-                   sparkle:shortVersionString="1.0"                   
-                   length="8253183"
+        <pubDate>Wed, 29 Jun 2016 16:22:11 +0800</pubDate>
+        <enclosure url="https://syshen.github.io/pixdrop/downloads/Pixdrop-1.0.58.dmg"
+                   sparkle:version="58"
+                   sparkle:shortVersionString="1.0"
+                   length="8338414"
                    type="application/octet-stream" />
     </item>
   </channel>
