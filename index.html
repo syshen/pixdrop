@@ -34,7 +34,7 @@
                         <p>Collect, browsing, and searching for your images without pain.</p>
                     </div>
                     <div class="btns">
-                        <a class="btn btn-large btn-success" id="open-popup">Free Download</a>
+                        <a class="btn btn-large btn-success btn-download" id="open-popup">Free Download</a>
                         <!--
                         <a class="btn btn-large btn-gray" href="#">Sign In</a>
                       -->
@@ -46,7 +46,7 @@
 </header><section class="content-16 v-center">
     <div>
         <div class="container">
-            <h3><img src="startup/common-files/img/icon@2x.png" width="100" height="100" alt="">Pixdrop - a handy tool
+            <h3><a class="btn-download"><img src="startup/common-files/img/icon@2x.png" width="100" height="100" alt=""></a>Pixdrop - a handy tool
                 designed for content workers.</h3>
 
             <p class="lead">Save your time from finding directories to store image assets, and searching for the images. It is the only place to keep your image collection and screenshots.</p>
@@ -212,7 +212,7 @@
     <div class="container">
         <h2>Pixdrop increases my workflow efficiency for more than 200%. Great tool!</h2>
         <p>Steven, CEO of Inspr Design</p>
-        <a class="btn btn-success" id="open-popup2">Free Download</a>
+        <a class="btn btn-success btn-download">Free Download</a>
     </div>
 </section><footer class="footer-15">
     <div class="container">
@@ -245,8 +245,10 @@
               // $.removeCookie('MCEvilPopupClosed', { path: '/' });
               require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us7.list-manage.com","uuid":"80b1f06cb0f4e0ed10b1cdf14","lid":"b3a473e5b6"}) })
             };
-            document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
-            document.getElementById("open-popup2").onclick = function() {showMailingPopUp()};
+            var elements = document.getElementsByClassName("btn-download");
+            for element in elements {
+              element.onclick = function() {showMailingPopUp()};
+            }
             </script>
 
         </div>
