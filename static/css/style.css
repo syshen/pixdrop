@@ -1252,6 +1252,10 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   -moz-border-radius: 6px;
   border-radius: 6px;
   background: #f2f3f4;
+  background-image: url("../../static/images/demo-video.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;;
   position: relative;
   overflow: hidden;
   height: 250px;

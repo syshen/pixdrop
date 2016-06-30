@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="startup/common-files/css/icon-font.css">
         <!-- end -->
         <link rel="stylesheet" href="startup/common-files/css/animations.css">
+        <link rel="stylesheet" href="static/colorbox.css">
         <link rel="stylesheet" href="static/css/style.css">
 
         <title>Pixdrop</title>
@@ -77,11 +78,7 @@
                         <div class="features-body active">
                             <h3>Drag &amp; drop any web image</h3>
 
-<<<<<<< HEAD
-                            <p>The fastest way to download a web image and insert into your document, powerpoint, or design application. All in just 2 steps.
-=======
                             <p>The fastest way to transfer a web image into your document, keynote, or design application. All in just 2 steps.
->>>>>>> 2ed09a8ef27715ec3dc616c0ba8238adc44f1764
                             </p>
                             <!--
                             <a class="btn btn-clear" href="#">TRY IT NOW</a>
@@ -127,10 +124,12 @@
               -->
             </div>
             <div class="col-sm-5 col-sm-offset-1">
-                <div class="player">
-                  <video class="demo-video">
-                    <source src="static/videos/screenshots.mp4" type="video/mp4"/>
+                <div style="display:none">
+                  <video id="demo-video">
+                    <source src="static/videos/screenshots.mp4" type="video/mp4" />
                   </video>
+                </div>
+                <div class="player">
                     <div class="btn btn-primary btn-play fui-play"></div>
                 </div>
             </div>
@@ -249,7 +248,6 @@
             <script type="text/javascript">
             function showMailingPopUp() {
               document.cookie = "MCEvilPopupClosed=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-              // $.removeCookie('MCEvilPopupClosed', { path: '/' });
               require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us7.list-manage.com","uuid":"80b1f06cb0f4e0ed10b1cdf14","lid":"b3a473e5b6"}) })
             };
 
@@ -260,8 +258,15 @@
                 });
               });
 
-              $('.fui-play').colorbox({iframe: true, rel: "demo-video", width:800, height:400})
+              $('.fui-play').colorbox({inline: true, width: "80%", height:"auto", href:"#demo-video", opacity:0.5});
 
+              $(document).bind("cbox_complete", function() {
+                function play() {
+                  var video = $("#demo-video").get(0);
+                  video.play();
+                }
+                setTimeout(play, 1000);
+              });
             });
             </script>
         </div>
