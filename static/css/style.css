@@ -931,6 +931,10 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   font-size:16px;
   border-top-left-radius:4px;
   border-bottom-left-radius:4px;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bttomleft: 4px;
   width:70%;
   display:inline-block;
   border:none;
@@ -1424,17 +1428,29 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   color: inherit;
   font-weight: 500;
 }
+.footer-15 h3 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 24px;
+  font-weight: 300;
+
+  margin-top: 200px;
+  text-align: left;
+}
 .footer-15 .email-form {
   display: flex;
-  margin-top: 200px;
+  /*margin-top: 200px;*/
   /*margin-bottom: 200px;*/
 }
 .footer-15 .email-notice {
   text-align: center;
-  font-weight: lighter;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
   font-style: italic;
   color: #aaa;
-  margin-top: 10px;
+  margin-top: 24px;
   margin-bottom: 200px;
 }
 .footer-15 .input-email {
