@@ -34,20 +34,27 @@
                         <h1>An image collector that boosts your productivity</h1>
                         <p>Pixdrop handles your web images and screenshots in the most efficient way.</p>
                     </div>
-                    <div class="btns">
-                        <a class="btn btn-large btn-success btn-download" id="open-popup">Free Download</a>
-                        <!--
-                        <a class="btn btn-large btn-gray" href="#">Sign In</a>
-                      -->
-                    </div>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5" style="display:flex">
+                    <input type="text" class="input-email" placeholder="Enter email address" style="" />
+                    <button class="btn-download">Free Download</button>
+                </div>
+                <!--
+                <div class="col-sm-2">
+                  <div class="btns">
+                    <a class="btn btn-large btn-success btn-download" id="open-popup">Free Download</a>
+                  </div>
+                </div>
+              -->
             </div>
         </div>
     </div>
 </header><section class="content-16 v-center">
     <div>
         <div class="container">
-            <h3><a class="btn-download"><img src="startup/common-files/img/icon@2x.png" width="100" height="100" alt=""></a>Pixdrop - a handy tool to speed up your content creation workflow.</h3>
+            <h3><img src="startup/common-files/img/icon@2x.png" width="100" height="100" alt="">Pixdrop - a handy tool to speed up your content creation workflow.</h3>
 
             <p class="lead">Save your time from hideous steps of downloading and transferring image files.</p>
         </div>
@@ -213,14 +220,26 @@
             </div>
         </div>
     </div>
-</section><section class="content-36">
+</section>
+<section class="content-36">
     <div class="container">
         <h2>Pixdrop is a productivity hack that increases my workflow efficiency by 500%. Great tool to save my time!</h2>
         <p>Steven, CEO of Inspr Design</p>
+        <!--
         <a class="btn btn-success btn-download">Free Download</a>
+      -->
     </div>
-</section><footer class="footer-15">
+</section>
+<footer class="footer-15">
     <div class="container">
+      <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <div class="email-form">
+              <input type="text" class="input-email" placeholder="Enter email address" style="" />
+              <button class="btn-download">Free Download</button>
+            </div>
+          </div>
+      </div>
         <span>&copy; 2016 <a href="http://insprdesign.com">Inspr Design</a> all rights reserved</span>
         <!--
         <div class="btns">
@@ -228,7 +247,9 @@
         </div>
       -->
     </div>
-</footer>            <!-- Placed at the end of the document so the pages load faster -->
+</footer>
+<iframe id="download_iframe" style="display:none;"></iframe>
+
             <script src="startup/common-files/js/jquery-1.10.2.min.js"></script>
             <script src="startup/common-files/js/jquery.bxslider.min.js"></script>
             <script src="startup/common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
@@ -244,17 +265,60 @@
             <script src="startup/common-files/js/froogaloop.min.js"></script>
             <script src="startup/common-files/js/startup-kit.js"></script>
             <script src="static/jquery.colorbox-min.js"></script>
+            <script src="https://www.parsecdn.com/js/parse-1.6.14.min.js"></script>
             <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
             <script type="text/javascript">
+            function validEmail(email) {
+              var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+              return regex.test(email);
+            }
+
+            function registerEmail(email, callback_success, callback_fail) {
+              Parse.initialize("F35shCLZt8uz23km8mRMnIVJtg3qYCHVNAD9W7rv", "nmkzxdMZEYrDBQH0jb1TIzqa7njXGmA3mfP2dbBd");
+
+              var Email = Parse.Object.extend("Email");
+              var e = new Email();
+              e.set("email", email);
+              e.save(null, {
+                success: callback_success,
+                error:callback_fail
+              });
+            }
+
+            function Download(url) {
+                document.getElementById('download_iframe').src = url;
+            };
+
+            function downloadApp() {
+              $(".input-email").each(function(index) {
+                var val = $(this).val();
+                var element = $(this);
+
+                if (val.length > 0) {
+                  if (validEmail(val)) {
+                    registerEmail(val, function(e) {
+                      element.val("Thank You! Download in progress");
+                      Download("http://bit.ly/293m47n");
+                    }, function(e, error) {
+                      element.val("Please try again");
+                    });
+                  } else {
+                    $(this).val("Not a valid email");
+                  }
+                }
+              });
+            }
+
             function showMailingPopUp() {
               document.cookie = "MCEvilPopupClosed=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC";
               require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us7.list-manage.com","uuid":"80b1f06cb0f4e0ed10b1cdf14","lid":"b3a473e5b6"}) })
             };
 
             $(document).ready(function() {
+
               $(".btn-download").each(function(index) {
                 $(this).on('click', function() {
-                  showMailingPopUp();
+                  downloadApp();
                 });
               });
 
