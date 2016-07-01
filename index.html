@@ -235,10 +235,15 @@
       <div class="row">
           <div class="col-sm-6 col-sm-offset-3">
             <div class="email-form">
-              <input type="text" class="input-email" placeholder="Enter email address" style="" />
+              <input type="text" class="input-email" placeholder="Enter email address"  />
               <button class="btn-download">Free Download</button>
             </div>
           </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <p class="email-notice">We won't spam. We usually send email occasionally.</p>
+        </div>
       </div>
         <span>&copy; 2016 <a href="http://insprdesign.com">Inspr Design</a> all rights reserved</span>
         <!--
@@ -298,7 +303,7 @@
                   if (validEmail(val)) {
                     registerEmail(val, function(e) {
                       element.val("Thank You! Download in progress");
-                      Download("http://bit.ly/293m47n");
+                      Download("http://bit.ly/29lArVC");
                     }, function(e, error) {
                       element.val("Please try again");
                     });

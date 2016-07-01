@@ -1427,6 +1427,14 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .footer-15 .email-form {
   display: flex;
   margin-top: 200px;
+  /*margin-bottom: 200px;*/
+}
+.footer-15 .email-notice {
+  text-align: center;
+  font-weight: lighter;
+  font-style: italic;
+  color: #aaa;
+  margin-top: 10px;
   margin-bottom: 200px;
 }
 .footer-15 .input-email {
