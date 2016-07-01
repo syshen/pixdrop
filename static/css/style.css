@@ -933,8 +933,12 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   border-bottom-left-radius:4px;
   -webkit-border-top-left-radius: 4px;
   -webkit-border-bottom-left-radius: 4px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
   -moz-border-radius-topleft: 4px;
   -moz-border-radius-bttomleft: 4px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bttomright: 0px;
   width:70%;
   display:inline-block;
   border:none;
