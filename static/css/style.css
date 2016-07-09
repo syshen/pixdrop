@@ -954,7 +954,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .input-email:hover,
 .input-email:focus {
   outline: 0;
-  border: 1px solid rgba(39,174,96,1);
+  border: 1px solid #F4430C;
   border-right: none;
   color: rgba(255, 255, 255,  0.9);
 }
@@ -966,14 +966,14 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   color: #fff;
   border-radius: 0 4px 4px 0;
   font-size:16px;
-  line-height:45px;
+  line-height:40px;
   /*float:left;*/
-  background: rgba(39,174,96,1);
+  background: #F4430C;
   border:none;
   box-sizing:border-box;
 }
 .btn-download:hover {
-  background: rgba(88,214,141, 1);
+  background: #FF9473;
 }
 
 @media (max-width: 768px) {
@@ -1469,7 +1469,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .footer-15 .input-email:hover,
 .footer-15 .input-email:focus {
   outline: 0;
-  border: 1px solid rgba(39,174,96,1);
+  border: 1px solid #F4430C;
   border-right: none;
 }
 

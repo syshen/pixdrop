@@ -32,7 +32,7 @@
                 <div class="col-sm-6">
                     <div class="hero-unit">
                         <h1>An image collector that boosts your productivity</h1>
-                        <p>Pixdrop handles your web images and screenshots in the most efficient way.</p>
+                        <p>Collect web images and screenshots in the most efficient way.</p>
                     </div>
                 </div>
             </div>
@@ -131,14 +131,18 @@
               -->
             </div>
             <div class="col-sm-5 col-sm-offset-1">
+              <!--
                 <div style="display:none">
                   <video id="demo-video">
                     <source src="static/videos/screenshots.mp4" type="video/mp4" />
                   </video>
                 </div>
+
                 <div class="player">
                     <div class="btn btn-primary btn-play fui-play"></div>
                 </div>
+              -->
+              <img src="startup/common-files/img/desktop-screenshots.gif" width="400" alt="">
             </div>
         </div>
     </div>
@@ -315,6 +319,8 @@
                   } else {
                     $(this).val("Not a valid email");
                   }
+                } else {
+                  $(this).val("Enter your email");
                 }
               });
             }
