@@ -10,11 +10,11 @@
     <item>
         <title>Version 1.0 Pre-alpha1</title>
         <sparkle:releaseNotesLink>
-          https://pixdrop.cc/release-1.0.63.html
+          https://pixdrop.cc/release-1.0.65.html
         </sparkle:releaseNotesLink>
         <pubDate>Sat, 08 Jul 2016 16:22:11 +0800</pubDate>
-        <enclosure url="https://pixdrop.cc/downloads/Pixdrop-1.0.63.dmg"
-                   sparkle:version="63"
+        <enclosure url="https://pixdrop.cc/downloads/Pixdrop-1.0.65.dmg"
+                   sparkle:version="65"
                    sparkle:shortVersionString="1.0"
                    length="8338414"
                    type="application/octet-stream" />
