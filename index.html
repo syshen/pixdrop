@@ -1,38 +1,82 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--the must have tags-->
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta name="description" content='Pixdrop - Drag &amp; Drop images from Mac menu bar'/>
-    <meta property="og:site_name" content="Pixdrop" />
-    <meta property="og:title" content="Pixdrop - Drag &amp; Drop images from Mac menu bar" />
-    <meta property="og:description" content='Drag &amp; Drop images from Mac menu bar' />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://pixdrop.cc" />
-    <meta property="og:image" content="https://pixdrop.cc/img/pixdrop-mbp.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta name="viewport" content="width=device-width">
+    <!--the must have assets-->
     <link rel="stylesheet" href="css/main.css">
-    <!-- <script src="js/main.js" defer></script> -->
-    <title>Pixdrop - Drag &amp; Drop Images from Mac menu bar</title>
+    <script src="js/main.js" defer></script>
+    <!--page title-->
+    <title>Phoenix Bootstrap UI kit</title>
   </head>
   <body>
-    <main class="page_wrapper">
-      <div class="cover cover--18 js-cover">
-        <div class="cover__pic_box--18"><img src="img/pixdrop-mbp.png" class="cover__img--18"></div>
-        <div class="container cover__container--18">
-          <div class="cover__text_box--18">
-            <h2 class="cover__title--18"><span class="cover__title_text--18">Drag &amp; Drop images from Mac menu bar</span></h2>
-            <div class="cover__description_box--18"><span class="cover__description_text--18">
-                Save your time from hideous steps of downloading and transferring image files.</span></div>
-            <div class="row">
-              <div class="col-xs-12 col-md-6">
-                <a href="https://pixdrop.cc/downloads/Pixdrop.dmg" class="button button--blue button--border-white">Download Beta</a>
-              </div>
+    <main class="page_wrapper ">
+      <!-- == START OF PRESENTATION NAVBAR ==-->
+      <!--this component is used for easier navigation and is not a part of the Phoenix tool. Yet, you still are free to use it in your projects if you want.-->
+      <!--
+      <nav class="navigation_bar">
+        <div class="container navigation_bar__toggler_box">
+          <button type="button" class="header__burger_button js-open-navigation-links"></button>
+        </div>
+        <div class="container navigation_bar__links_box js-navigation-links">
+          <div class="row">
+            <div class="col-xs-12">
+              <ul class="navigation_bar__items_list">
+                <li class="navigation_bar__item"><a href="cover--01" class="navigation_bar__link js-navigation-link">cover 01</a></li>
+                <li class="navigation_bar__item"><a href="cover--02" class="navigation_bar__link js-navigation-link">cover 02</a></li>
+                <li class="navigation_bar__item"><a href="counter--03" class="navigation_bar__link js-navigation-link">counter 03</a></li>
+              </ul>
+
             </div>
           </div>
         </div>
+      </nav>
+    -->
+      <!-- == END OF PRESENTATION NAVBAR ==-->
+      <!-- ____________________________-->
+      <!-- == START OF MENU COMPONENTS ==-->
+      <!-- == START OF DESKTOP MENU 01 (this menu is opened on burger tap: both in desktops and in mobiles) ==-->
+
+      <!-- == END OF MENU 14 (large desktop header--14 is hidden on mobiles (iPhone, iPad, etc) and this one is to be opened on burger tap) ==-->
+      <!-- == END OF MENU COMPONENTS ==-->
+      <!-- ____________________________-->
+      <!-- == START OF COVER COMPONENTS ==-->
+
+      <!-- == START OF COVER 21 ==-->
+      <div style="background-image: url(img/bg/bg--mountains-white.jpg)" class="cover cover--21 js-cover">
+        <!-- == START OF HEADER 07 ==-->
+        <!--
+        <nav class="header header--07">
+          <div class="container header__container">
+            <div class="header__left_box"><a href="#" title="Home" class="header__logo_box"><img src="img/etc/logo--circle--black.svg" alt="Phoenix UI kit logo" class="header__logo_img"></a></div>
+
+            <div class="header__center_box">
+              <ul class="header__menu_list header__item--desktop">
+                <li class="header__menu_item"><a href="#" class="header__menu_link">about</a></li>
+                <li class="header__menu_item"><a href="#" class="header__menu_link">tour</a></li>
+                <li class="header__menu_item"><a href="#" class="header__menu_link">pricing</a></li>
+                <li class="header__menu_item"><a href="#" class="header__menu_link">blog</a></li>
+                <li class="header__menu_item"><a href="#" class="header__menu_link">contact</a></li>
+              </ul>
+            </div>
+            <div class="header__right_box"><a href="#" class="button button--white button--gray-shadow header__item--desktop">sign up</a>
+              <button type="button" data-menu-index="07" class="header__burger_button header__burger_button--black js-open-menu header__item--mobile"></button>
+            </div>
+          </div>
+        </nav>
+      -->
+        <!-- == END OF HEADER 07 ==-->
+        <div class="container">
+          <div class="cover__content_box">
+            <h2 class="cover__title cover__title--21"><span class="cover__title_text cover__title_text--21">Drag &amp; Drop images<br>from Mac menu bar</span></h2>
+            <div class="cover__button_box--21"><a href="#" class="cover__button--21 button button--blue button--blue-shadow">Beta Download</a></div>
+            <div class="cover__image_box--21"><img src="img/pixdrop-mbp.png" class="cover__image"></div>
+          </div>
+        </div>
       </div>
+      <!-- == END OF COVER 21 ==-->
+      <!-- == END OF COVER COMPONENTS ==-->
 
       <div class="features features--04">
         <div class="features__container--04">
@@ -86,7 +130,7 @@
           <h3 class="contents__title--02">It is FREE!</h3><span class="contents__text--02">Our team uses it everyday. And we want to <br>share with you. Try it free now, and give us <a href="mailto:contact@insprdesign.com">feedback</a>.</span>
         </div>
         <div class="contents__buttons_box--02"><a href="https://pixdrop.cc/downloads/Pixdrop.dmg" class="button button--blue button--border-white">Download Beta</a>
-</div>
+        </div>
         <div class="contents__image_box--02"><img src="img/pixdrop-mbp.png" class="contents__image--02"></div>
       </div>
 
@@ -101,6 +145,8 @@
           </ul>
         </div>
       </footer>
+
     </main>
   </body>
+  <div class="js-overlay js-close-navigation js-close-menu overlay"></div>
 </html>

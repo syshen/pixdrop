@@ -7343,7 +7343,7 @@ input.call_to_action__form__item--08 {
 .features__box--04 {
   float: left;
   width: 50%;
-  padding: 200px 0 200px 110px; }
+  padding: 85px 0 85px 110px; }
   @media (max-width: 1200px) {
     .features__box--04 {
       padding: 55px 15px 55px 40px; } }
@@ -7358,11 +7358,11 @@ input.call_to_action__form__item--08 {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 40%;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  width: 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
   @media (max-width: 768px) {
@@ -7371,15 +7371,11 @@ input.call_to_action__form__item--08 {
       opacity: 0.1;
       width: 100%; } }
 
-.features__box--image--center--04 {
-
-}
 .features__box--image--left--04 {
   left: 0; }
 
 .features__box--image--right--04 {
-  right: 0;
-  margin-right: 5%;}
+  right: 0; }
 
 .features__box--left-margin--04 {
   margin-left: 50%; }
@@ -7438,8 +7434,8 @@ input.call_to_action__form__item--08 {
   -webkit-background-size: auto 100%;
   -moz-background-size: auto 100%;
   -o-background-size: auto 100%;
-  background-size: auto 70%;
-  background-position: 90% 50%;
+  background-size: auto 100%;
+  background-position: right bottom;
   background-repeat: no-repeat; }
   @media (max-width: 1200px) {
     .features--06 {
@@ -9135,8 +9131,7 @@ input.call_to_action__form__item--08 {
       margin-right: auto; } }
 
 .contents--02 {
-  text-align: center;
-  background-color: #eee;}
+  text-align: center; }
 
 .contents__title--02 {
   font-weight: 700;
@@ -11146,8 +11141,8 @@ input.call_to_action__form__item--08 {
       padding: 30px 0; } }
   @media (min-width: 993px) {
     .footer--07 {
-      height: 60px;
-      line-height: 60px; } }
+      height: 100px;
+      line-height: 100px; } }
 
 @media (max-width: 992px) {
   .footer__logo_box--07 {
@@ -11181,12 +11176,12 @@ input.call_to_action__form__item--08 {
       margin: 0 15px 0 0; } }
   @media (max-width: 500px) {
     .footer__nav__item--07 {
-      margin: 0 15px 0px 0; } }
+      margin: 0 15px 15px 0; } }
 
 .footer__nav__link--07 {
-  font-weight: 400;
-  /*text-transform: uppercase;*/
-  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 11px;
   letter-spacing: 0.05em;
   color: white; }
   .wf-montserrat-n7-active .footer__nav__link--07 {
@@ -12699,7 +12694,7 @@ input.cover__form__item--13 {
       text-align: center; } }
   @media (max-width: 500px) {
     .cover--18 {
-      padding-bottom: 30px; } }
+      padding-bottom: 0; } }
 
 .cover__container--18 {
   position: relative;
@@ -12762,8 +12757,7 @@ input.cover__form__item--13 {
       -ms-transform: none;
       -o-transform: none;
       transform: none;
-      margin-top: 100px;
-      /*margin-bottom: 60px; */} }
+      margin-top: 100px; } }
 
 .cover__title--18 {
   margin-bottom: 40px; }
