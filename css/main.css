@@ -12699,7 +12699,7 @@ input.cover__form__item--13 {
       text-align: center; } }
   @media (max-width: 500px) {
     .cover--18 {
-      padding-bottom: 0; } }
+      padding-bottom: 40; } }
 
 .cover__container--18 {
   position: relative;
@@ -12708,7 +12708,7 @@ input.cover__form__item--13 {
 .cover__pic_box--18 {
   position: absolute;
   bottom: 0;
-  /*left: -20%;*/
+  left: -20%;
   top: 60%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -12763,7 +12763,7 @@ input.cover__form__item--13 {
       -o-transform: none;
       transform: none;
       margin-top: 100px;
-      margin-bottom: 60px; } }
+      /*margin-bottom: 60px; */} }
 
 .cover__title--18 {
   margin-bottom: 40px; }
