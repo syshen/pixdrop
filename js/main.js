@@ -1504,22 +1504,24 @@ function download(url) {
 
 $(document).ready(function() {
   $('.button--download').magnificPopup({
-  type: 'inline',
-  preloader: true,
-  focus: '#name',
+    type: 'inline',
+    preloader: true,
+    focus: '#name',
 
-  // When elemened is focused, some mobile browsers in some cases zoom in
-  // It looks not nice, so we disable it:
-  callbacks: {
-    beforeOpen: function() {
-      if($(window).width() < 700) {
-        this.st.focus = false;
-      } else {
-        this.st.focus = '#name';
+    // When elemened is focused, some mobile browsers in some cases zoom in
+    // It looks not nice, so we disable it:
+    callbacks: {
+      beforeOpen: function() {
+        if($(window).width() < 700) {
+          this.st.focus = false;
+        } else {
+          this.st.focus = '#name';
+        }
       }
     }
-  }
   });
 
-  download('downloads/Pixdrop.dmg');
+  $('.mc-embedded-subscribe').click(function() {
+    download('downloads/Pixdrop.dmg');    
+  });
 });
