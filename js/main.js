@@ -1521,7 +1521,7 @@ $(document).ready(function() {
     }
   });
 
-  $('.mc-embedded-subscribe').click(function() {
-    download('downloads/Pixdrop.dmg');    
+  $('.button--download').click(function() {
+    download('downloads/Pixdrop.dmg');
   });
 });
