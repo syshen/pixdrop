@@ -1,0 +1,15 @@
+.demo-video {
+  position:absolute;
+  top:27px;
+  left:75px;
+  width:488px;
+  height:305px
+}
+@media (max-width: 768px) {
+  .demo-video {
+    top:7%;
+    left:11.5%;
+    width:76%;
+    height:auto;
+  }
+}
