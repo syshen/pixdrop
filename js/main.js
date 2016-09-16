@@ -1506,7 +1506,7 @@ $(document).ready(function() {
   $('.button--download').magnificPopup({
     type: 'inline',
     preloader: true,
-    focus: '#name',
+    focus: '#subscribe',
 
     // When elemened is focused, some mobile browsers in some cases zoom in
     // It looks not nice, so we disable it:
@@ -1515,7 +1515,7 @@ $(document).ready(function() {
         if($(window).width() < 700) {
           this.st.focus = false;
         } else {
-          this.st.focus = '#name';
+          this.st.focus = '#subscribe';
         }
       }
     }
