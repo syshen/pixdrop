@@ -16,12 +16,14 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link href="https://cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+	    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+    </style>
     <script src="js/main.js" defer></script>
     <script src="js/video.js" defer></script>
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-    <script type="text/javascript" defer>
-      require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us7.list-manage.com","uuid":"80b1f06cb0f4e0ed10b1cdf14","lid":"b3a473e5b6"}) })
-    </script>
+    <script src="js/jquery.magnific-popup.min.js" defer></script>
 
     <title>Pixdrop - drag &amp; drop images from Mac menu bar</title>
 
@@ -32,11 +34,21 @@
         <nav class="header header--07">
           <div class="container header__container">
             <div class="header__left_box"><a href="https://insprdesign.com" title="Home" class="header__logo_box"><img src="img/etc/logo--pixdrop--black.svg" alt="Pixdrop logo" class="header__logo_img"></a></div>
-            <div class="header__right_box"><a href="downloads/Pixdrop.dmg" class="button button--blue button--gray-shadow header__item--desktop">BETA DOWNLOAD</a>
-              <a href="downloads/Pixdrop.dmg" class="header__item--mobile">Download</a>
+            <div class="header__right_box"><a href="#mc-embedded-subscribe-form" class="button button--blue button--gray-shadow header__item--desktop button--download">BETA DOWNLOAD</a>
+              <a href="#mc-embedded-subscribe-form" class="header__item--mobile button--download">Download</a>
             </div>
           </div>
         </nav>
+
+        <form action="//pixdrop.us7.list-manage.com/subscribe/post?u=80b1f06cb0f4e0ed10b1cdf14&amp;id=b3a473e5b6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mfp-hide validate white-popup-block" novalidate>
+          <div id="mc_embed_signup_scroll">
+    	       <label for="mce-EMAIL">Subscribe to our mailing list</label>
+    	        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_80b1f06cb0f4e0ed10b1cdf14_b3a473e5b6" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+        </form>
 
         <div class="container">
           <div class="cover__content_box">
@@ -85,4 +97,7 @@
 
     </main>
   </body>
+
+  <iframe id="download_iframe" style="display:none;"></iframe>
+
 </html>
