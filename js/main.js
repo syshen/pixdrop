@@ -1523,6 +1523,6 @@ $(document).ready(function() {
 
   $('#form-submit-button').click(function() {
     download('downloads/Pixdrop.dmg');
-    $('.mc-embedded-subscribe-form').submit();
+    $('#mc-embedded-subscribe-form').submit();
   });
 });
