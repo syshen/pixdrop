@@ -13,10 +13,10 @@
           https://pixdrop.cc/release-1.0.68.html
         </sparkle:releaseNotesLink>
         <pubDate>Sat, 08 Jul 2016 16:22:11 +0800</pubDate>
-        <enclosure url="https://pixdrop.cc/downloads/Pixdrop-1.0.69.dmg"
-                   sparkle:version="69"
+        <enclosure url="https://pixdrop.cc/downloads/Pixdrop-1.0.70.dmg"
+                   sparkle:version="70"
                    sparkle:shortVersionString="1.0"
-                   length="8893046"
+                   length="8904313"
                    type="application/octet-stream" />
     </item>
   </channel>
