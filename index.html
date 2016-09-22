@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="keywords" content="mac, menubar, app, drag&amp;drop, image, images, gif, screenshot, iphone, ios, osx, menu bar">
+    <meta name="keywords" content="mac, menubar, app, drag&amp;drop, image, images, gif, screenshot, iphone, ios, osx, menu bar, utility, tool">
     <meta name="author" content="Inspr Design">
     <meta name="description" content="Drag &amp; drop to collect screenshots and website images in the most efficient way.">
 
@@ -33,6 +33,9 @@
       ga('create', 'UA-84325907-1', 'auto');
       ga('send', 'pageview');
 
+      function gaEvent(category,action,label){
+        ga('send', 'event', category, action, label);
+      }
     </script>
     <title>Pixdrop - drag &amp; drop images from Mac menu bar</title>
 
