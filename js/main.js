@@ -1522,8 +1522,10 @@ $(document).ready(function() {
   });
 
   $('#form-submit-button').click(function() {
-    gaEvent('actions','download','');
     download('downloads/Pixdrop.dmg');
-    $('#subscribe').submit();
+    gaEvent('actions','download','');
+    setTimeout(function() {
+      $('#subscribe').submit();
+    }, 1000);
   });
 });
