@@ -1,5 +1,6 @@
 $(function(){
   $('.play-video-button').on('click',function(){
+    gaEvent('actions','video','play');
     $(this).hide();
     $('.demo-video')[0].play();
   })
