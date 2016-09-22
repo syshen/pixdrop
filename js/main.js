@@ -1499,7 +1499,8 @@ window.addEventListener('DOMContentLoaded', function (){
 });
 // == END OF PHOENIX JS ==
 function download(url) {
-    document.getElementById('download_iframe').src = url;
+  window.open(url, '_blank');
+    // document.getElementById('download_iframe').src = url;
 };
 
 $(document).ready(function() {
