@@ -1500,7 +1500,6 @@ window.addEventListener('DOMContentLoaded', function (){
 // == END OF PHOENIX JS ==
 function download(url) {
   window.open(url, '_blank');
-    // document.getElementById('download_iframe').src = url;
 };
 
 $(document).ready(function() {
@@ -1513,6 +1512,9 @@ $(document).ready(function() {
     // It looks not nice, so we disable it:
     callbacks: {
       beforeOpen: function() {
+        download('downloads/Pixdrop.dmg');
+        gaEvent('actions','download','');
+
         if($(window).width() < 700) {
           this.st.focus = false;
         } else {
@@ -1523,10 +1525,6 @@ $(document).ready(function() {
   });
 
   $('#form-submit-button').click(function() {
-    download('downloads/Pixdrop.dmg');
-    gaEvent('actions','download','');
-    setTimeout(function() {
-      $('#subscribe').submit();
-    }, 1000);
+    $('#subscribe').submit();
   });
 });
