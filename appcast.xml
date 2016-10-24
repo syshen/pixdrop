@@ -8,15 +8,15 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-        <title>Version 1.0 Pre-alpha1</title>
+        <title>Version 1.0</title>
         <sparkle:releaseNotesLink>
           https://pixdrop.cc/release-1.0.68.html
         </sparkle:releaseNotesLink>
-        <pubDate>Sat, 08 Jul 2016 16:22:11 +0800</pubDate>
-        <enclosure url="https://pixdrop.cc/downloads/Pixdrop-1.0.70.dmg"
-                   sparkle:version="70"
+        <pubDate>Mon, 24 Oct 2016 22:22:11 +0800</pubDate>
+        <enclosure url="https://pixdrop.cc/downloads/Pixdrop-1.0.71.dmg"
+                   sparkle:version="71"
                    sparkle:shortVersionString="1.0"
-                   length="8904313"
+                   length="8908536"
                    type="application/octet-stream" />
     </item>
   </channel>
